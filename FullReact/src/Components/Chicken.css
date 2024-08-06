@@ -1,0 +1,131 @@
+.full {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    height: 50px;
+  }
+  
+  .navbar .logo h1 {
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .search-bar-container {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .beefrecipe {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 60%;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .recipe-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .recipe-item h2 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .recipe-item img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .recipe-item p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .instructions {
+    background-color: #f9f9f9;
+   padding-left: 0px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    margin-left: 0px;
+  
+  }
+  
+  .ingredients {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+   
+  }
+  
+  .ingredients th,
+  .ingredients td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .ingredients th {
+    background-color: #f2f2f2;
+  }
+  .youtube-video {
+    margin-bottom: 20px;
+    text-align: center;
+    
+  }
+  
+  .youtube-video iframe {
+    max-width:400px;
+    max-height: max-content;
+    border: none;
+    padding-bottom: 0px;
+  
+  }
+  

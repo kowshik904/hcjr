@@ -1,0 +1,185 @@
+/* RecipeCategory.css */
+
+/* Navbar styles */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+   padding: 0;
+}
+/* Basic styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for medium screens */
+  }
+  .nav-links {
+    display: none; /* Hide the nav links on smaller screens */
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar.responsive .nav-links {
+    display: flex; /* Show nav links when navbar is responsive */
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+    cursor: pointer;
+  }
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  padding: 1.5rem 1rem;
+  background-color: #6b7280; /* Dark grey background for the navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  position: absolute;
+  left: 1rem; /* Adjust left padding to position logo */
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: goldenrod; /* Golden Rod color for the logo text */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.logo h1:hover {
+  color: #000; /* Black color on hover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 2rem; /* Space between the nav links */
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid goldenrod;
+  font-weight: 600;
+  color: goldenrod;
+  border-radius: 10px;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.nav-links a:hover {
+  border-color: grey;
+  background-color: grey;
+  color: black; /* Black color on hover */
+}
+
+/* Category container styles */
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 1rem;
+}
+
+.category-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(33.333% - 40px); /* Adjust width as needed */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+  transform: scale(1.05); /* Enlarge the item on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+
+.category-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.view-recipes a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: goldenrod; /* Goldenrod background */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.view-recipes a:hover {
+  background-color: grey; /* Grey background on hover */
+  color: black; /* Black text color on hover */
+}
